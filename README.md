@@ -58,7 +58,7 @@ This program is written to accept a specific file at a specific path.  The follo
 
 
 ### Change to Read a File Formatted Differently
-The program is written to process a voter results file where the first column is voter ID, the second column is the county, and the third column is the resulting vote.  The only two fields we need to reference and process are the level we are reporting results on (i.e. in the file, county) and the voter result.  The following two lines are where these are defined:
+The program is written to process a voter results file where the first column is voter ID, the second column is the county, and the third column is the resulting vote.  The only two fields we need to reference and process are the level we are reporting results on (i.e. in this file it is county) and the voter result.  The following two lines are where these are defined:
         
     candidate_name = row[2]
     county_name = row[1]

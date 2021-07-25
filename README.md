@@ -45,7 +45,7 @@ The analysis of the election results shows that:
 
 The results above were output both in the terminal and to a text file and presented as follows:
 
-![Results_output.png](analysis/Results_output.png)
+![Results_output](analysis/Results_output.png)
 
 
  ## Election Audit Summary

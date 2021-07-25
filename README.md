@@ -58,15 +58,15 @@ This program is written to accept a specific file at a specific path.  The follo
 
 
 ### Change to Read a File Formatted Differently
-The program is written to process a voter results file where the first column is voter ID, the second column is the county, and the third column is the resulting vote.  The only two fields we need to reference and process are the level we are reporting results on (i.e. in the file, county) and the voter result.  The following two lines are where these are defined:
+The program is written to process a voter results file where the first column is voter ID, the second column is the county, and the third column is the resulting vote.  The only two fields we need to reference and process are the level we are reporting results on (i.e. in this file, county) and the vote result.  The following two lines are where these are defined:
         
     candidate_name = row[2]
     county_name = row[1]
 
-In the current input file, candidate (or vote result) is defined as being in the third column and county name is the second column.  Those indexes can be changed to handle files that might have data reported differently.
+In the current input file, candidate (or vote result) is defined as being in the third column, so indexed with 2.  The county name is the second column, therefore indexed with 1.  Those indexes can be changed to handle files that might have that data in different columns.
 
 ### Change to Process for a Different Geographical Area
-This particular program was written specifically to process a file made up of county-level data.  However, the base logic would be the same whether we are reporting at a county-level, state level, city level, or other. While this specific change would not affect the overall logic, you would likely want to change the county-specific variable names to be more relatable to the data we are actually processing.  For example, the following list we declared for county, or the dictionary we declared to track votes by county:
+This particular program was written specifically to process a file made up of county-level data.  However, the base logic would be the same whether we are reporting at a county-level, state-level, city-level, or other. While this specific change would not affect the overall logic,you would likely want to change the county-specific variable names to be more relatable to the data we are actually processing.  For example, the following list we declared for county, or the dictionary we declared to track votes by county:
 
     county_list = []
     county_votes = {}
